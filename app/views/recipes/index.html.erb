@@ -1,0 +1,9 @@
+<% @recipes.each do |rec| %>
+<h1><%= rec.name %></h1>
+<h3>Ingredients</h3>
+<ul>
+	<% rec.ingredients.each do |ing| %>
+	<li><%= ing.name %></li>
+	<% end %>
+</ul>
+<% end %>

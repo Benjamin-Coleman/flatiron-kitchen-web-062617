@@ -1,0 +1,7 @@
+<%= @ingredient.name %>
+<h3>Contained in:</h3>
+<ul>
+<% @ingredient.recipes.each do |rec| %>
+	<li><%= rec.name %></li>
+<% end %>
+</ul>
